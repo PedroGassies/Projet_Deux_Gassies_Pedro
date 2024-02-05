@@ -75,6 +75,77 @@ li:hover{
 
 
 /*********** MAIN **************/
+
+/********** BARRE DE RECHERCHE ***********/
+
+.Rechercher{
+    height: 100px;
+    width:600px;
+    margin-left: 10px;
+}
+
+#ville::placeholder{
+    display: flex;
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size:1.2em;
+    color:black;
+}
+form{
+    height:60px;
+    display: flex;
+    width: 100%;
+
+}
+.fa-location-dot{
+    color:black;
+    display: flex;
+    justify-content: center;
+}
+
+#ville{
+    border-top:1px #F2F2F2 solid;
+    border-bottom:1px #F2F2F2 solid;
+    border-left: 0px;
+    border-right: 0px;
+    width:200px;
+}
+i{
+    
+    background-color: #F2F2F2;
+    width:50px;
+    border-radius: 15px 0 0 15px;
+    align-items: center;
+}
+ button{
+    background-color: #0065FC;
+    font-weight: 700;
+    cursor:pointer;
+    border: 1px #0065FC;
+ }
+.Recherche{
+    color: #F2F2F2;
+    font-family: 'Raleway',sans-serif;
+    font-size:1.1em;
+    width:130px;
+    border-radius: 0px 15px 15px 0px;
+    
+}
+
+.loupe{
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    visibility: hidden;
+}
+
+.fa-magnifying-glass{
+    font-size: 25px;
+    background-color: #0065FC;
+    color:#F2F2F2;
+}
+/*************   ***********/
 a {
     color: inherit;
     text-decoration: none;
