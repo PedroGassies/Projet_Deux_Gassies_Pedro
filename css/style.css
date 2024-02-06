@@ -35,7 +35,7 @@ body {
 header{
     display:flex;
     justify-content: space-between;
-    margin-bottom:120px;
+    margin-bottom:100px;
 }
 ul, li{
 list-style:none;
@@ -80,13 +80,23 @@ li:hover{
 
 
 /*********** MAIN **************/
+.accroche{
+    margin-bottom: 45px;
+}
 
+.accroche h2{
+    margin-bottom: 0;
+}
+
+.accroche p{
+    margin-top:10px;
+}
 /********** BARRE DE RECHERCHE ***********/
 
 .Rechercher{
     height: 100px;
     width:600px;
-    margin-left: 10px;
+    margin-bottom: 15px;
 }
 
 #ville::placeholder{
@@ -158,7 +168,7 @@ i{
     align-items: center;
     font-weight: 700;
     width: 800px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .romantique, .economique, .pepites, .familiale {
@@ -189,7 +199,17 @@ cursor: pointer;
 }
 
 
-/************ ***************/
+/************ QUANTITE ***************/
+.quantite{
+    display:flex;
+    align-items: center;
+    padding-left:10px;
+    margin-bottom: 20px;
+}
+.quantite svg{
+    padding-right:15px;
+}
+/************ ****************/
 a {
     color: inherit;
     text-decoration: none;
