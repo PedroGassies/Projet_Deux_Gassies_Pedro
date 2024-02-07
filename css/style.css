@@ -206,8 +206,15 @@ cursor: pointer;
     padding-left:10px;
     margin-bottom: 20px;
 }
+.quantite p{
+    padding-left: 25px;
+}
 .quantite svg{
-    padding-right:15px;
+    position: absolute;
+}
+
+.ellipse{
+    left:283px;
 }
 /************ ****************/
 a {
@@ -254,6 +261,7 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-bottom: 70px;
 }
 
 /****** Hebergements ***********/
@@ -354,6 +362,45 @@ margin-bottom: 5px;
     margin-bottom: 5px;
 }
 
+
+/*********************** ACTIVITES **************************/
+
+
+.activites{
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+.activites h2{
+    padding-left: 45px;
+    padding-bottom: 10px;
+}
+
+.activites-card .card{
+    display:flex;
+    flex-direction: column;
+    width:23%;
+    height:450px;
+    padding:0;
+}
+.activites-card{
+    display:flex;
+    justify-content: space-around;
+    width: 95%;
+    padding-left: 30px;
+}
+
+.activites-card img{
+    height:400px;
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites h3{
+    padding-left: 15px;
+}
 
 
 
