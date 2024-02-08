@@ -1,6 +1,4 @@
-/****** General ***********/
-@media screen and (max-width: 1440px){
-    
+/****** General ***********/  
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -257,7 +255,7 @@ a {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
+    display:flex;
     justify-content: space-between;
 }
 
@@ -442,7 +440,6 @@ margin-bottom:20px;
     cursor: pointer;
 }
 
-}
 
 
 
@@ -502,6 +499,7 @@ margin-bottom:20px;
     .logo{
         display: flex;
         justify-content: center;
+        padding-right: 8px;
     }
 
     header ul {
@@ -529,7 +527,7 @@ margin-bottom:20px;
 
     /************ INTRO **************/
     .intro{
-        margin-left: 15px;
+margin-left: 10px;
     }
     .accroche h2{
         text-align: left;
@@ -571,48 +569,117 @@ margin-bottom:20px;
     .filtres .titre{
         width:100%;
         margin-bottom: 20px;
+        font-size: 20px;
+        letter-spacing: -0.5px;
+
     }
     .familiale{
         width :170px;
     }
 
     /************************QUANTITE ***************/
-    .ellipse{
-        left:24px;
+    .quantite{
+        padding:0;
     }
+    .quantite p{
+        max-width: 80%;
+        padding-left: 35px;
+    } 
+    .quantite svg{
+        padding-left:12px;
+    }
+    .ellipse{
+        left:9px;
+    }
+/************************* POPULAIRES **********************/
+.populaires-cards{
+    flex-direction: column;
+}
+.section-title{
+    margin-left: 8px;
+}
+.populaires-cards .card{
+    width:345px;
+    margin-left: 8px;
+}
+.populaires-cards .card-title{
+    font-size: 16px;
+    max-width: 90%;
+}
+.populaires-cards .card-subtitle{
+    font-size: 14px;
+}
+.populaires-cards .fa-xs{
+    width:8%;
+    margin-left: -4px;
+    font-size: 0.96em;
+}
 
     /****************** HEBERGEMENTS  ****************/
-    .hebergements-and-populaires .hebergements {
-        background-color: white;
+.hebergements-and-populaires{
+    display:grid;
+    grid-template-areas: "a b";
     }
-
+.hebergements-and-populaires section{
+    padding:15px;
+    border-radius: 0;
+    }
+.hebergements-and-populaires .hebergements {
+    background-color: white;
+    }
+.hebergements{
+grid-row-start: 2;
+    }
+.hebergements-cards{
+    margin-left: 8px;
+}
     .hebergements h2{
     margin-bottom: 0;
-    margin-left: -10px;
+    margin-left: 8px;
     }
     .afficher{
         padding-top: 20px;
-        margin-left: -5px;
         font-size: 20px;
     }
+
     .hebergements-cards .card{
-        width:360px;
-        margin-left:-10px;
+        width:345px;
         margin-top:15px;
     }
 
     .fa-xs{
-        font-size: 1.1em;
-        width:5%;
-        margin-left: -5px;
+        font-size: 1em;
+        margin-left: -3px;
     }
 
+/************ ACTIVITES ***********/
+.activites{
+    height:auto;
+}
+.activites h2{
+    padding-bottom: 0;
+    padding-left: 20px;
+}
+.activites-card{
+flex-wrap: wrap;
+padding-left: 35px;
+}
 
 
+.activites-card .card{
+    width:345px;
+    height: 170px;
+    margin-left: -60px;
+    margin-top: 15px;
+ }
+.activites-card img{
+    height:120px;
+    width: 100%;
+}
     /************** FOOTER ***************/
     footer div{
         flex-direction: column;
         padding-bottom: 30px;
-        margin-left: -5px;
+
     }
 }
