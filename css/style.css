@@ -102,11 +102,9 @@ header li:hover{
 
 #ville::placeholder{
     display: flex;
-    text-align: center;
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size:1.2em;
-    color:black;
 }
 form{
     height:60px;
@@ -125,7 +123,7 @@ form{
     border-bottom:1px #F2F2F2 solid;
     border-left: 0px;
     border-right: 0px;
-    width:200px;
+    width:40%;
 }
 i{
     
@@ -144,7 +142,7 @@ i{
     color: #F2F2F2;
     font-family: 'Raleway',sans-serif;
     font-size:1.1em;
-    width:130px;
+    width:25%;
     border-radius: 0px 15px 15px 0px;
     
 }
@@ -170,7 +168,7 @@ i{
     display: flex;
     align-items: center;
     font-weight: 700;
-    width: 800px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -179,19 +177,20 @@ i{
     border: #D9D9D9 2px solid;
     display: flex;
     align-items: center;
-    width: 170px;
+    width: 14%;
     height: 45px;
     margin-left: 20px;
 }
 
 .familiale{
-    width:130px;
+    width:10%;
 }
 
 .romantique svg, .economique svg, .pepites svg, .familiale svg {
-    width: 25px;
+    width: 20%;
+    min-width: 20%;
     height: 22px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -206,19 +205,19 @@ cursor: pointer;
 .quantite{
     display:flex;
     align-items: center;
-    padding-left:10px;
     margin-bottom: 20px;
 }
 .quantite p{
     padding-left: 25px;
 }
 .quantite svg{
-    position: absolute;
+    border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+    border: solid #F2F2F2;
+    width: 22px;
+    height: 20px;
 }
 
-.ellipse{
-    left:283px;
-}
+
 /************ ****************/
 a {
     color: inherit;
@@ -266,11 +265,20 @@ a {
     box-sizing: border-box;
     margin-bottom: 70px;
 }
+.card:hover{
+    opacity: 0.85;
+    scale:1.1
+}
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
 
+}
+.hebergements a{
+    width:31%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hebergements-cards{
@@ -282,7 +290,7 @@ a {
 .hebergements-cards .card{
     display:flex;
     height: 210px;
-    width:245px;
+    width:100%;
     margin-top: 30px;
     flex-direction: column;
 }
@@ -370,7 +378,7 @@ margin-bottom: 5px;
 
 
 .activites{
-    height:500px;
+    height:80%;
     display:flex;
     flex-direction: column;
     margin-bottom: 120px;
@@ -395,7 +403,7 @@ margin-bottom: 5px;
 }
 
 .activites-card img{
-    height:400px;
+    height:80%;
     width:100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -447,6 +455,24 @@ margin-bottom:20px;
 
 /********************* TABLETTES **********************/
 @media screen and (max-width: 1024px) {
+
+    .filtres .titre{
+        width:100%;
+        margin-bottom: 20px;
+        font-size: 20px;
+        letter-spacing: -0.5px;
+    }
+    .filtres{
+        flex-wrap: wrap;
+    }
+
+    .economique,.familiale,.pepites,.romantique{
+        width:23%;
+        margin-left: 10px;
+    }
+    .familiale{
+        width: 17%;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -477,7 +503,11 @@ margin-bottom:20px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .populaires-cards .fa-xs{
+        width:10%;
+    }
 }
+
 
 
 
@@ -494,31 +524,35 @@ margin-bottom:20px;
         flex-direction: column;
         border-bottom:2px #F2F2F2 solid;
         margin-bottom:30px;
-        max-width: 110%;
+        width: 100%;
     }
     .logo{
         display: flex;
         justify-content: center;
-        padding-right: 8px;
     }
 
     header ul {
         position: relative;
-        max-width:100%;
-        margin-top: 5px;
-        margin-left: 45px;
+        display:flex;
+        justify-content: space-around;
+        right:0;
+        margin: 0;
+        width:100%;
 
     }
     header li{
-        max-width: 50%;
-        margin-right: 140px;
-        margin-left: -10px;
-        padding-bottom:20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin:0;
+        padding: 15px 0;
+
     }
 
-    header ul:hover{
+    header li:hover{
         color:#0065FC;
-        border-bottom: 1.5px #0065FC solid;
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
     }
 
     /************ MAIN **********/
@@ -537,19 +571,25 @@ margin-left: 10px;
 
 
     /************* RECHERCHE ***********/
+    .Rechercher{
+        width:91%;
+        height: auto;
+    }
     form{
         height:50px;
     }
     .Recherche{
         visibility: hidden;
+        width:0;
+        
     }
     #ville{
-        width:47%;
+        width:64%;
     }
     .loupe{
         visibility: visible;
         position:absolute;
-        left:330px;
+        right:24%;
     }
 
 
@@ -567,12 +607,7 @@ margin-left: 10px;
         width:46%;
     }
 
-    .filtres .titre{
-        width:100%;
-        margin-bottom: 20px;
-        font-size: 20px;
-        letter-spacing: -0.5px;
-    }
+    
 
     /************************QUANTITE ***************/
     .quantite{
@@ -580,28 +615,29 @@ margin-left: 10px;
     }
     .quantite p{
         width: 80%;
-        padding-left: 35px;
+        padding-left: 20px;
     } 
-    .quantite svg{
-        padding-left:12px;
-    }
-    .ellipse{
-        left:9px;
-    }
+
+
 /************************* POPULAIRES **********************/
 .populaires{
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .populaires-cards{
     flex-direction: column;
 }
+.populaires-cards .card{
+width:100%;
+margin-top: 15px;
+margin-left: 10px;
+}
+.populaires-cards a{
+    width: 90%;
+}
 .section-title{
     margin-left: 8px;
 }
-.populaires-cards .card{
-    width:345px;
-    margin-left: 8px;
-}
+
 .populaires-cards .card-title{
     font-size: 16px;
     max-width: 90%;
@@ -619,10 +655,13 @@ margin-left: 10px;
 .hebergements-and-populaires{
     display:grid;
     grid-template-areas: "a b";
+    grid-template-columns: 100%;
     }
 .hebergements-and-populaires section{
-    padding:15px;
+    padding:25px 15px;
+    margin-bottom: 0;
     border-radius: 0;
+    width: 100%;
     }
 .hebergements-and-populaires .hebergements {
     background-color: white;
@@ -630,20 +669,25 @@ margin-left: 10px;
 .hebergements{
 grid-row-start: 2;
     }
+    .hebergements a{
+        padding-left: 10px;
+        width:93%;
+    }
 .hebergements-cards{
-    margin-left: 8px;
+    margin-right: 10px;
+    flex-direction: column;
 }
     .hebergements h2{
     margin-bottom: 0;
     margin-left: 8px;
     }
     .afficher{
-        padding-top: 20px;
         font-size: 20px;
+        padding-top: 10px;
     }
 
     .hebergements-cards .card{
-        width:345px;
+        width:100%;
         margin-top:15px;
     }
 
@@ -655,21 +699,22 @@ grid-row-start: 2;
 /************ ACTIVITES ***********/
 .activites{
     height:auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 .activites h2{
     padding-bottom: 0;
-    padding-left: 20px;
+    padding-left: 35px;
 }
 .activites-card{
 flex-wrap: wrap;
-padding-left: 35px;
+padding-left: 10px;
 }
 
 
 .activites-card .card{
-    width:345px;
+    width:85%;
     height: 170px;
-    margin-left: -60px;
     margin-top: 15px;
  }
 .activites-card img{
