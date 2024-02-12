@@ -457,7 +457,7 @@ margin-bottom:20px;
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top:50px;
     }
 
     .populaires-cards {
@@ -544,7 +544,7 @@ margin-left: 10px;
         visibility: hidden;
     }
     #ville{
-        width:280px;
+        width:47%;
     }
     .loupe{
         visibility: visible;
@@ -555,7 +555,7 @@ margin-left: 10px;
 
     /***************** FILTRES *************/
     .filtres {
-        max-width:100%;
+        width:100%;
         flex-wrap: wrap;
         margin-bottom: 0;
     }
@@ -564,6 +564,7 @@ margin-left: 10px;
         margin-bottom: 20px;
         margin-left: 0;
         margin-right:10px;
+        width:46%;
     }
 
     .filtres .titre{
@@ -571,10 +572,6 @@ margin-left: 10px;
         margin-bottom: 20px;
         font-size: 20px;
         letter-spacing: -0.5px;
-
-    }
-    .familiale{
-        width :170px;
     }
 
     /************************QUANTITE ***************/
@@ -582,7 +579,7 @@ margin-left: 10px;
         padding:0;
     }
     .quantite p{
-        max-width: 80%;
+        width: 80%;
         padding-left: 35px;
     } 
     .quantite svg{
@@ -592,6 +589,9 @@ margin-left: 10px;
         left:9px;
     }
 /************************* POPULAIRES **********************/
+.populaires{
+    margin-top: 30px;
+}
 .populaires-cards{
     flex-direction: column;
 }
